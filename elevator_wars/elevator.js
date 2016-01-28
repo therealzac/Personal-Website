@@ -127,6 +127,8 @@ Elevator.prototype.updateElevatorMovement = function(timeSinceUpdate) {
                 this.velocityY += directionSign * acceleration * timeSinceUpdate;
             }
         } else if (velocitySign === 0) {
+            var ding = new Audio('ding.mp3');
+            ding.play();
             acceleration = Math.min(
               Math.abs(destinationDiff * 5),
               this.ACCELERATION

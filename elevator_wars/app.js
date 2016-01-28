@@ -1,3 +1,7 @@
+var elevatorMusic = new Audio('music.mp3');
+elevatorMusic.play();
+
+
 var createEditor = function() {
     var localStorageKey = "Elevator_Wars";
 

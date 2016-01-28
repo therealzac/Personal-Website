@@ -1,4 +1,3 @@
-
 function clearAll($elems) {
     _.each($elems, function($elem) {
         $elem.empty();
